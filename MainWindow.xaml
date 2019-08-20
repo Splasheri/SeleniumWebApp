@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="301.999" Width="931.323" Closed="Window_Closed">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="647*"/>
+            <ColumnDefinition Width="276*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="CountryList" HorizontalAlignment="Left" Height="204" Margin="10,55,0,0" VerticalAlignment="Top" Width="139"/>
+        <Button x:Name="CountryChoise" Content="Choose country" HorizontalAlignment="Left" VerticalAlignment="Top" Width="139" Margin="10,16,0,0" Height="34" Click="AnyClick" Tag="country"/>
+        <Button x:Name="CityChoise" Content="Choose city" HorizontalAlignment="Left" VerticalAlignment="Top" Width="139" Margin="164,16,0,0" Height="34" Click="AnyClick" Tag="city"/>
+        <Button x:Name="FunctionChoise" Content="Choose function" HorizontalAlignment="Left" VerticalAlignment="Top" Width="139" Margin="318,16,0,0" Height="34" Click="AnyClick" Tag="department"/>
+        <Button x:Name="LanguageChoise" Content="Choose language" HorizontalAlignment="Left" VerticalAlignment="Top" Width="139" Margin="473,16,0,0" Height="34" Click="LanguageChoise_Click"/>
+        <ListBox x:Name="CityList" HorizontalAlignment="Left" Height="204" Margin="164,55,0,0" VerticalAlignment="Top" Width="139"/>
+        <ListBox x:Name="FunctionList" HorizontalAlignment="Left" Height="204" Margin="318,55,0,0" VerticalAlignment="Top" Width="139"/>
+        <ListBox x:Name="LanguageList" HorizontalAlignment="Left" Height="204" Margin="473,55,0,0" VerticalAlignment="Top" Width="139" SelectionMode="Multiple" VerticalContentAlignment="Top"/>
+        <ListBox x:Name="JobList" HorizontalAlignment="Left" Height="204" Margin="126.638,55,0,0" VerticalAlignment="Top" Width="139" Grid.Column="1"/>
+        <Button x:Name="OpenJobLink" Content="Open link" HorizontalAlignment="Left" VerticalAlignment="Top" Width="139" Margin="126.638,16,0,0" Height="34" Grid.Column="1" Click="OpenJobLink_Click"/>
+        <Label x:Name="JobCounter" Content="0 jobs" HorizontalAlignment="Left" Margin="631,37,0,0" VerticalAlignment="Top" Width="122" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.ColumnSpan="2" Height="79"/>
+        <Button x:Name="CompleteTask" Content="Complete task" Grid.Column="1" HorizontalAlignment="Left" Margin="0,147,0,0" VerticalAlignment="Top" Width="89" Height="27" Click="Button_Click"/>
+
+    </Grid>
+</Window>
